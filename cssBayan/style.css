@@ -33,8 +33,13 @@ h6 {
 
 html,
 body {
+    height: 100%;
+    line-height: 1;
     font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
 }
+
 
 .wrapper {
     min-height: 100%;
@@ -45,10 +50,54 @@ body {
 
 /* Техничесский класс, ограничевающий контейнер */
 ._container {
-    max-width: 1046px;
+    max-width: 90%;
     padding: 0px 15px;
     margin: 0px auto;
     box-sizing: content-box;
 }
 
 /* ================== */
+
+.header {
+    padding: 30px 0 10px 0px;
+    border-bottom: 1px solid rgb(178, 174, 174);
+}
+
+.header__title {
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.main {
+}
+
+.block {
+
+}
+
+.block_copy {
+}
+
+.block__subtitle {
+    padding: 30px 0 15px 0px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.block__text {
+}
+
+.block__image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-block {
+}
+
+.image-block-size {
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: cover;
+}
