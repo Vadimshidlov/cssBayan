@@ -14,45 +14,65 @@
     <h1 class="header__title">CSS Bayan</h1>
 </header>
 <main class="main _container">
-    <section class="block block_copy _container">
-        <div class="block__subtitle">
+    <section class="block block_copy " id="btn-control" type="checkbox">
+        <label class="block__subtitle" for="block_1">
             <h3 class="block__text">You can just copy and paste CSS</h3>
-        </div>
-        <div class="block__image image-block">
+            <img src="./img/xmark-solid.svg" alt="" class="block__btn-close">
+            <img src="./img/plus-solid.svg" alt="" class="block__btn-open">
+        </label>
+        <div class="block__image">
             <img src="./img/01.jpg" alt="" class="image-block-size">
+            <input class="block_input" type="radio" name="block" id="block_1">
+
         </div>
     </section>
-    <section class="block block_copy">
-        <div class="block__subtitle">
+    <section class="block block_calm">
+        <label class="block__subtitle" for="block_2">
             <h3 class="block__text">Keep calm and carry on</h3>
-        </div>
+            <img src="./img/xmark-solid.svg" alt="" class="block__btn-close">
+            <img src="./img/plus-solid.svg" alt="" class="block__btn-open">
+        </label>
         <div class="block__image">
             <img src="./img/02.jpg" alt="" class="image-block-size">
+            <input class="block_input" type="radio" name="block" id="block_2">
+
         </div>
     </section>
-    <section class="block block_copy">
-        <div class="block__subtitle">
+    <section class="block block_work">
+        <label class="block__subtitle" for="block_3">
             <h3 class="block__text">Work life balance</h3>
-        </div>
+            <img src="./img/xmark-solid.svg" alt="" class="block__btn-close">
+            <img src="./img/plus-solid.svg" alt="" class="block__btn-open">
+        </label>
         <div class="block__image">
             <img src="./img/03.jpg" alt="" class="image-block-size">
+            <input class="block_input" type="radio" name="block" id="block_3">
         </div>
     </section>
-    <section class="block block_copy">
-        <div class="block__subtitle">
+    <section class="block block_js">
+        <label class="block__subtitle" for="block_4">
             <h3 class="block__text">Dude, where is JS?</h3>
-        </div>
+            <img src="./img/xmark-solid.svg" alt="" class="block__btn-close">
+            <img src="./img/plus-solid.svg" alt="" class="block__btn-open">
+        </label>
+        <input class="block_input" type="radio" name="block" id="block_4" checked="checked">
         <div class="block__image">
             <img src="./img/04.jpg" alt="" class="image-block-size">
         </div>
+
     </section>
-    <section class="block block_copy">
-        <div class="block__subtitle">
-            <h3 class="block__text">Relax and take it easy</h3>
-        </div>
+    <section class="block block_relax">
+        <label class="block__subtitle" for="block_5">
+            Relax and take it easy
+            <img src="./img/xmark-solid.svg" alt="" class="block__btn-close">
+            <img src="./img/plus-solid.svg" alt="" class="block__btn-open">
+
+        </label>
         <div class="block__image">
             <img src="./img/05.jpg" alt="" class="image-block-size">
         </div>
+        <input class="block_input" type="radio" name="block" id="block_5">
+
     </section>
 </main>
 <footer class="footer"></footer>
