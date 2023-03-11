@@ -208,12 +208,17 @@ body {
     display: inline;
 }
 
+
 .main:hover .block_copy .block__subtitle .block__btn-close,
 .main:hover .block_calm .block__subtitle .block__btn-close,
 .main:hover .block_work .block__subtitle .block__btn-close,
 .main:hover .block_js .block__subtitle .block__btn-close,
 .main:hover .block_relax .block__subtitle .block__btn-close {
     display: none;
+}
+
+.main:hover .block_input:checked .block__subtitle .block__btn-close {
+    display: block;
 }
 
 
@@ -348,20 +353,20 @@ body {
     color: black;
 }
 
-.block_input:checked ~ .block__subtitle span{
+.block_input:checked ~ .block__subtitle span {
     display: none;
 }
 
 
 /*checked btn change*/
 
-.block_input:checked ~ label + img.block__btn-open {
+/*.block_input:checked ~ label + img.block__btn-open {
     display: none;
 }
 
 .block_input:checked ~ label + img.block__btn-close {
     display: block;
-}
+}*/
 
 @media (max-width: 820.98px) {
     .block .block__subtitle .block__btn-close {
@@ -375,12 +380,16 @@ body {
         display: block;
     }
 
-
+    .block .block__input:checked ~ label img {
+        display: none;
+    }
 
 }
-.block .block_input[type="radio"]:checked ~ label > span {
+
+.main:hover .block_input:checked ~ .block__subtitle .block__btn-open {
     display: none;
 }
+
 /*===*/
 
 
