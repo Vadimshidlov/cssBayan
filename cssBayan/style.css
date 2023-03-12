@@ -80,7 +80,7 @@ body {
 /* ================== */
 
 .header {
-    padding: 1.9rem 0 1rem 0px;
+    padding: 1.9rem 0 1rem 0;
     border-bottom: 1px solid rgb(178, 174, 174);
 }
 
@@ -95,12 +95,6 @@ body {
     }
 }
 
-
-@media (max-width: 767.87px) {
-    .title {
-
-    }
-}
 
 @media (min-width: 820px) {
     .main:hover .block .block__subtitle .block__header {
@@ -143,14 +137,6 @@ body {
     align-items: center;
     padding: 1.25rem 0 2.25rem 0;
     width: 100%;
-}
-
-
-.block__btn-open {
-    cursor: pointer;
-
-    width: 20px;
-    height: 20px;
 }
 
 
@@ -210,8 +196,6 @@ body {
 }
 
 
-
-
 @media (min-width: 821px) {
     .block__subtitle {
         cursor: pointer;
@@ -220,7 +204,7 @@ body {
 
 
 .block__text {
-    padding: 1.8rem 0 0.9rem 0px;
+    padding: 1.8rem 0 0.9rem 0;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -235,8 +219,8 @@ body {
 .block__btn-open {
     cursor: pointer;
 
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .block_relax .block_input {
@@ -281,13 +265,6 @@ body {
         transition: max-height 1s;
         max-height: 600px;
     }
-}
-
-.btn_plus{
-    cursor: pointer;
-    font-size: 40px;
-    width: 20px;
-    height: 20px;
 }
 
 
