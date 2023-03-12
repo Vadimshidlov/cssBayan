@@ -89,10 +89,12 @@ body {
     font-weight: 700;
 }
 
-
-.main:hover, header:hover {
-    cursor: pointer;
+@media (min-width: 821px) {
+    .main:hover, header:hover {
+        cursor: pointer;
+    }
 }
+
 
 @media (max-width: 767.87px) {
     .title {
@@ -107,12 +109,11 @@ body {
 }
 
 
-
 .block {
     padding: 2rem 0rem 2rem 0rem;
 }
 
-.block_copy_tablet{
+.block_copy_tablet {
     display: none;
 }
 
@@ -130,7 +131,6 @@ body {
 }
 
 
-
 .block__subtitle {
     display: flex;
     flex-direction: column;
@@ -138,9 +138,12 @@ body {
 
 }
 
-.block__subtitle:hover .block__image{
-    display: block;
+@media (min-width: 820.98px) {
+    .block__subtitle:hover .block__image {
+        display: block;
+    }
 }
+
 
 .block__header {
     display: flex;
@@ -169,7 +172,7 @@ body {
 .block__image {
     margin-top: 3rem;
     display: none;
-    /*max-height: 0px;*/
+    margin-top: 3rem;
 }
 
 
@@ -177,7 +180,18 @@ body {
     max-width: 70vw;
     max-height: 600px;
     object-fit: cover;
+
 }
+
+.block_input:checked ~ .block__image {
+    display: flex;
+    justify-content: center;
+    max-height: 600px;
+
+}
+/*.block_input:checked ~ .image-block-size {
+    max-height: 600px;
+}*/
 
 
 .block_input {
@@ -191,10 +205,8 @@ body {
 }
 
 
-.block_input:checked ~ .block__image {
-    display: flex;
-    justify-content: center;
-}
+
+
 
 .block_input:checked ~ .block__subtitle {
     color: black;
@@ -217,7 +229,12 @@ body {
     justify-content: space-between;
     color: blue;
 
-    cursor: pointer;
+}
+
+@media (min-width: 821px) {
+    .block__subtitle {
+        cursor: pointer;
+    }
 }
 
 .block__text {
@@ -228,13 +245,11 @@ body {
 }
 
 
-
-
-.image-block-size {
+/*.image-block-size {
     max-width: 70vw;
     max-height: 600px;
     object-fit: cover;
-}
+}*/
 
 .block__btn-open {
     cursor: pointer;
@@ -256,12 +271,12 @@ body {
     display: block;
 }
 
-.block_input:checked + label .block__header .block__btn-open{
+.block_input:checked + label .block__header .block__btn-open {
     transform: rotate(45deg);
 }
 
 @media (min-width: 820.98px) {
-    .block__subtitle:hover .block__header .block__btn-open{
+    .block__subtitle:hover .block__header .block__btn-open {
         transform: rotate(45deg);
     }
 }
@@ -269,8 +284,6 @@ body {
 .block__image:active {
     opacity: .5;
 }
-
-
 
 
 
