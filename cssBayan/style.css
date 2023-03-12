@@ -69,7 +69,6 @@ body {
     flex-direction: column;
 }
 
-/* Техничесский класс, ограничевающий контейнер */
 ._container {
     max-width: 90%;
     padding: 0px 0.9rem;
@@ -77,7 +76,6 @@ body {
     box-sizing: content-box;
 }
 
-/* ================== */
 
 .header {
     padding: 1.9rem 0 1rem 0;
