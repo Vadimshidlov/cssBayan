@@ -117,14 +117,6 @@ body {
     display: none;
 }
 
-@media (max-width: 820.87px) {
-    /*.block_copy_tablet{
-        display: block;
-    }
-    .block_copy{
-        display: none;
-    }*/
-}
 
 .block:not(:last-child) {
     border-bottom: 1px solid rgb(178, 174, 174);
@@ -149,6 +141,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.25rem 0 2.25rem 0;
     width: 100%;
 }
 
@@ -162,36 +155,29 @@ body {
 
 
 .block__image {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
     margin: 0 auto;
     padding: 0rem 1.25rem 0rem 1.25rem;
 }
 
-.block__image {
-    margin-top: 3rem;
-    display: none;
-    margin-top: 3rem;
-}
-
 
 .image-block-size {
+    margin: 0px auto;
     max-width: 70vw;
-    max-height: 600px;
+    max-height: 0px;
     object-fit: cover;
-
+    transition: max-height 1s;
 }
 
-.block_input:checked ~ .block__image {
-    display: flex;
-    justify-content: center;
-    max-height: 600px;
-
+@media (min-width: 821px) {
+    .block__subtitle:hover .image-block-size {
+        max-height: 600px;
+    }
 }
-/*.block_input:checked ~ .image-block-size {
+
+
+.block_input:checked ~ .block__subtitle .image-block-size {
     max-height: 600px;
-}*/
+}
 
 
 .block_input {
@@ -205,31 +191,26 @@ body {
 }
 
 
-
-
-
 .block_input:checked ~ .block__subtitle {
     color: black;
 }
 
 
-/*===*/
-/*example*/
 .block {
     padding: 2rem 0rem 2rem 0rem;
 
 }
 
-.block_relax {
-}
 
 .block__subtitle {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     color: blue;
-
 }
+
+
+
 
 @media (min-width: 821px) {
     .block__subtitle {
@@ -237,19 +218,19 @@ body {
     }
 }
 
+
 .block__text {
     padding: 1.8rem 0 0.9rem 0px;
     font-size: 2rem;
     font-weight: 600;
-    cursor: pointer;
 }
 
+@media (min-width: 821px) {
+    .block__text {
+        cursor: pointer;
+    }
+}
 
-/*.image-block-size {
-    max-width: 70vw;
-    max-height: 600px;
-    object-fit: cover;
-}*/
 
 .block__btn-open {
     cursor: pointer;
@@ -281,14 +262,37 @@ body {
     }
 }
 
-.block__image:active {
+.block__subtitle:active {
     opacity: .5;
+}
+
+.block__subtitle:active .block__header .block__text {
+    color: blue;
+}
+
+
+@media (min-width: 821px) {
+    .block_js2 .block__subtitle .image-block-size {
+        margin: 0px auto;
+        max-height: 0px;
+    }
+
+    .block_js2 .block__subtitle:hover .image-block-size {
+        transition: max-height 1s;
+        max-height: 600px;
+    }
+}
+
+.btn_plus{
+    cursor: pointer;
+    font-size: 40px;
+    width: 20px;
+    height: 20px;
 }
 
 
 
 
-/*===================*/
 
 
 
